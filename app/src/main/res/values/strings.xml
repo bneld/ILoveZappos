@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ILoveZappos</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_box">Enter a search term</string>
+    <string name="search_button">Explore</string>
+    <string name="connectivity_error">Sorry, the internet cannot be reached currently.</string>
+    <string name="check_out">Check Out (0)</string>
+    <string name="swipe">Swipe left and right for products</string>
+    <string name="brand_name">Brand Name</string>
+    <string name="product_name">Product Name</string>
+    <string name="price">Price</string>
+    <string name="web_browser">View in Web Browser</string>
+    <string name="results">Results</string>
+</resources>
