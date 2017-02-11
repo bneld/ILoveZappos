@@ -44,11 +44,13 @@ public class ProductActivity extends ActionBarActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Results");
 
+        //setting up viewpager for swiping products
         viewPager = (ProductViewPager) findViewById(R.id.product_pager);
         productCollectionPagerAdapter = new ProductCollectionPagerAdapter(getSupportFragmentManager(), this);
         viewPager.storeAdapter(productCollectionPagerAdapter);
         viewPager.setPageTransformer(true, new DepthPageTransformer());
 
+        //fab for adding to cart
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.product_fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,6 +108,7 @@ public class ProductActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    //adapter that provides ProductFragments to the viewpager
     public class ProductCollectionPagerAdapter extends FragmentStatePagerAdapter {
         FragmentActivity activity;
         public ProductCollectionPagerAdapter(FragmentManager fm, FragmentActivity activity) {
@@ -133,8 +136,8 @@ public class ProductActivity extends ActionBarActivity {
         }
     }
 
+    //Fragment for displaying Products
     public static class ProductFragment extends Fragment {
-        public static final String ARG_OBJECT = "object";
 
         @Override
         public View onCreateView(LayoutInflater inflater,

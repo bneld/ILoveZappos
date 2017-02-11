@@ -87,9 +87,6 @@ public class MainActivity extends AppCompatActivity {
             public void onFailure(Call<ResponseObject> call, Throwable t) {
                 // Log error here since request failed
                 Log.d("", "Request failed.");
-//                LinearLayout layout = (LinearLayout) findViewById(R.id.main_content);
-//                TextView errorMessage = (TextView) layout.findViewById(R.id.connectivity_error_message);
-//                errorMessage.setVisibility(View.VISIBLE);
                 Toast toast = Toast.makeText(getApplicationContext(), "Failure to connect.", Toast.LENGTH_LONG);
                 toast.show();
             }

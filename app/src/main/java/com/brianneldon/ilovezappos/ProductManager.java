@@ -4,6 +4,8 @@ import java.util.List;
 
 /**
  * Created by Brian on 2/9/2017.
+ * This keeps a static list of the results returned from the API.
+ * it also keeps track of the currently displayed product.
  */
 
 public class ProductManager {

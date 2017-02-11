@@ -6,6 +6,7 @@ import retrofit2.http.Query;
 
 /**
  * Created by Brian on 2/1/2017.
+ * Client that queries Zappos API.
  */
 
 public interface ZapposService {

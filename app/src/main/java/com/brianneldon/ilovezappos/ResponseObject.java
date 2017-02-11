@@ -5,6 +5,7 @@ import java.util.List;
 
 /**
  * Created by Brian on 2/1/2017.
+ * The object that is populated by the json returned from the Zappos API.
  */
 
 public class ResponseObject {
@@ -14,22 +15,7 @@ public class ResponseObject {
     private String term;
     private List<Product> results;
     private String statusCode;
-//    private static Product currentProduct;
 
-//    public static Product getCurrentProduct() {
-//        return currentProduct;
-//    }
-//
-//    public static void setCurrentProduct(int index) {
-//        if(index >= 0 && index < results.size()){
-//            currentProduct = results.get(index);
-//        }
-//    }
-
-//    public static int getCurrentResultCount() {return currentResultCount;}
-//
-//    public static void setCurrentResultCount(int count) {currentResultCount = count;}
-//
     public List<Product> getResults() {return results;}
 
     public void setResults(List<Product> results) {this.results = results;}
@@ -37,12 +23,6 @@ public class ResponseObject {
     public ResponseObject(){
         results = new ArrayList<>();
     }
-
-//    public static ResponseObject parseJSON(String response) {
-//        Gson gson = new GsonBuilder().create();
-//        ResponseObject responseObject = gson.fromJson(response, ResponseObject.class);
-//        return responseObject;
-//    }
 
     public String toString(){
         String string =  "Original term: " + originalTerm

@@ -8,6 +8,7 @@ import android.view.View;
 
 /**
  * Created by Brian on 2/9/2017.
+ * Custom viewpager for displaying ProductFragments
  */
 
 public class ProductViewPager extends ViewPager {
